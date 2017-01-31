@@ -11,7 +11,7 @@ echo "Running suite(s): gtk-doc-$suite";
 
 # test perl scripts
 for file in gtkdoc-check gtkdoc-fixxref gtkdoc-mkdb gtkdoc-mktmpl gtkdoc-rebase gtkdoc-scan gtkdoc-scangobj gtkdoc-scanobj ; do
-  /usr/bin/perl -cwT `which $file`
+  f:/lang/perl5/bin/perl -cwT `which $file`
   if test $? = 1 ; then failed=`expr $failed + 1`; fi
   tested=`expr $tested + 1`
 done
